@@ -1,0 +1,149 @@
+/* icone burger menu */
+.container {
+	/* positionnement des elements l'un en dessous des autres*/
+	display: inline-block;
+	/* passage du pointer en "main"*/
+    cursor: pointer;
+}
+/* icone burger menu */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:rgb(119, 64, 24);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* instruction après click en relation avec le .js (déplacement des barres) */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/* cette barre est mise en transparence car pas utilisée*/
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -6px);
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+/* mise en horizontal des blocs 2 et 3 */
+#conteneur{
+	display: flex;
+}
+
+body,html{
+	margin: 0;
+	/* marge intérieure au bloc */
+	padding: 0;
+	/* adaptation du contenu d'un bloc*/
+	max-width: 100%;
+	/* Si le contenu est plus gros que le conteneur, le contenu ne s'affiche pas */
+	overflow-x: hidden;
+	text-align: center;
+	color: rgb(92, 45, 12);
+
+}
+
+h1{
+	font-size: 70px;
+}
+
+h2{
+	background: rgba(226, 223, 223, 0.5);
+	font-size: 50px;
+
+
+
+}
+
+h3{
+	font-size: 30px;
+
+}
+
+
+
+.Recettes{
+background-image: url("Fondant.jpg");
+/* largeur-hauteur */
+background-size: 100% 600px;
+background-repeat: no-repeat;
+width: 50%;
+height: 600px;
+margin-right: 5px;
+margin-left: 5px;
+margin-bottom: 5px;
+font-family: 'Maven Pro', sans-serif;
+
+}
+
+
+.Evenements{
+background-image: url("chocoSalon.jpg");
+background-size: 100% 600px;
+background-repeat: no-repeat;
+width: 50%;
+height: 600px;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 20px;
+font-family: 'Maven Pro', sans-serif;
+
+}
+.Titre{
+padding-top: 70px;
+background-color: rgba(75, 37, 10, 0.056);
+height: 600px;
+margin-bottom: 10px;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 5px;
+font-family: 'Maven Pro', sans-serif;
+}
+
+h1.Titre{
+	/* bold font */
+	font-weight: 700;
+}
+
+.container{
+	position: fixed;
+	top: 20px;
+	right: 40px;
+}
+#burgerMenu{
+	/* l'icone est fixe si l'on scroll */
+	position: fixed;
+	/* Le contenu du menu ne s'affiche pas à l'avance */
+	display: none;
+	top: 60px;
+	right: 40px;
+}
+
+ul li{
+	font-family: 'Maven Pro', sans-serif;
+	list-style: none;
+	font-weight: 400;
+	text-align: Left;
+	color: white;
+	background: rgba(55, 27, 7, 0.85);
+	background-size: 5px;
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+	font-weight: 400;
+}
+
+.surbrillanceElementMenu:hover{
+	color:aqua;
+}
+
+.lienInterne{
+	font-family: 'Maven Pro', sans-serif;
+	color: rgb(92, 45, 12);
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+}

@@ -1,0 +1,52 @@
+/* règles css pour resolution <1280px */
+@media screen and (max-width: 1280px)
+{
+	/* mise en vertical des blocs 2 et 3 */
+	#conteneur{
+	display: flex;
+	flex-direction: column;
+}
+	.Recettes{
+	background-image: url("Fondant.jpg");
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+	margin-top: 60px;
+	font-family: 'Maven Pro', sans-serif;
+	}
+
+	.Evenements{
+	background-image: url("chocoSalon.jpg");
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+	font-family: 'Maven Pro', sans-serif;
+	}
+
+	.Titre{
+	padding-top: 70px;
+	background-color: rgba(252, 247, 247, 0.267);
+	height: 600px;
+	font-family: 'Maven Pro', sans-serif;
+	}
+
+	#burgerMenu{
+	position: fixed;
+	display: none;
+	top: 60px;
+	right: 40px;
+}
+
+	ul li{
+	font-weight: 500;
+	font-size: 23px;
+	background-size: 5px;
+	padding: 20px;
+}
+
+	#logo{
+		width: 100%;
+	}
+}

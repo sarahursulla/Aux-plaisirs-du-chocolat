@@ -1,0 +1,25 @@
+html body{
+    font-family: 'Maven Pro', sans-serif;
+    padding-top: 100px;
+    color: rgb(92, 45, 12);
+    text-align: center;
+}
+
+a{
+    color: rgb(92, 45, 12);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#link{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	cursor: pointer;
+
+}
+
+.surbrillanceElementMenu:hover{
+	color:aqua;
+}

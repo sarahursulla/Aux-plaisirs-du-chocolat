@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+	<head>
+		<title>Recettes - Aux plaisirs du chocolat</title>
+			<meta name="description" content="Blog pour les passionnés de chocolats. Retrouver l'histoire du chocolat, ses variétés, les pays producteurs, les recettes, les évenements."> 
+			<!-- css format ordinateur-->
+			<link rel="stylesheet" href="css/styleRecettes.css"/>
+			<!-- police d'ecriture maven pro-->
+			<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+			<!-- responsive-->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- css format mobile-->
+			<link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/styleRecettesSmallRes.css" />
+	</head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('body').append('<a href="#" class="top_link" title="Revenir en haut de page">Haut</a>');
+				$('.top_link').css({
+					'position'				:	'fixed',
+					'right'					:	'80px',
+					'bottom'				:	'50px',
+					'display'				:	'none',
+					'padding'				:	'20px',
+					'background'			:	'aqua',
+					'-moz-border-radius'	:	'40px',
+					'-webkit-border-radius'	:	'40px',
+					'border-radius'			:	'40px',
+					'opacity'				:	'0.9',
+					'z-index'				:	'2000'
+			});
+						$(window).scroll(function(){
+				posScroll = $(document).scrollTop();
+				if ($(window).width()>1280){
+					if(posScroll >=550) 
+						$('.top_link').fadeIn(600);
+					else
+						$('.top_link').fadeOut(600);
+				}
+			});
+		});
+	</script>
+	<body>
+		<div id="allMenu">
+			<div>
+				<!-- icone burger menu + fontions changement de couleurs-->
+				<div class="container" onclick="myFunction(this)" onmouseover="functionOver(this)" onmouseout="functionOut(this)">
+					<div id="bar1" class="bar1 "></div>
+					<div id="bar2" class="bar2 "></div>
+					<div id="bar3" class="bar3 "></div>
+				</div>
+				<!-- Animation .js de l'icone burger menu-->
+				<script src="js/burgerMenu.js"></script>
+			</div>
+			<!-- liste du burger menu -->
+			<div id="burgerMenu">
+				<ul class="burgerMenu">
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="comingSoon.html#">Histoire du chocolat</a></li>
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="comingSoon.html#">Variétés de chocolat</a></li>
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="comingSoon.html#">Les producteurs</a></li>
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="recettes.html#">Recettes</a></li>
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="evenements.html#">Évènements</a></li>
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="comingSoon.html#">Qui sommes-nous?</a></li>
+					<li class="liste"><a class="surbrillanceElementMenu lien" href="comingSoon.html#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<section id="menu">
+			<h2 id="link"><a class="surbrillanceElementMenu" 	href="accueil.html#">Home</a></h2>
+			<h1 id="title">Découvrez nos savoureuses recettes</h1>
+			<div id="raccourci">
+				<br/>
+				<div class="raccourci"><h3><a class="surbrillanceElementMenu" href="#chocolatChaud">Chocolat chaud créole</a></h3></div>
+				<div class="raccourci"><h3><a class="surbrillanceElementMenu" href="#fondant">Fondant</a></h3></div>
+				<div class="raccourci"><h3><a class="surbrillanceElementMenu" href="#DômeAuChocolat">Dôme au chocolat</a></h3></div>
+				<div class="raccourci"><h3><a class="surbrillanceElementMenu" href="#Milkshake">Milkshake</a></h3></div>
+				<div class="raccourci"><h3><a class="surbrillanceElementMenu" href="#TruffesAuChocolat">Truffes au chocolat</a></h3></div>
+				<div class="raccourci"><h3><a class="surbrillanceElementMenu" href="#MousseAux3Chocolats">Mousse aux 3 chocolats</a></h3></div>
+			</div>
+			
+		</section>
+		<section id="chocolatChaud">
+			<h3>Chocolat chaud créole</h3>
+			<div class="conteneur1">
+				<div class="conteneur2">
+					<div class="conteneur3">
+						<img src="imgRecettes/chocolatchaud.png" width="250" height="170"/>
+						<div>
+							<h4>Realisation:</h4>
+							<ul>
+								<li>Difficulte : Facile</li>
+								<li>Preparation : 15 mn</li>
+								<li>Cuisson : 20 mn</li>
+								<li>Temps Total : 45 mn</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pas">
+						<p>Faire chauffer le lait 1/2 écrémé avec le lait concentré non sucré,la cannelle, le zeste de citron, la vanille. Ne pas laisser bouillir. Il faut que le lait s'imprègne des arômes lentement.</p>
+						<p>Ensuite, ajoutez le chocolat délayé dans un peu ce ce lait chaud.</p>
+						<p>Laisser consommer 10 minutes, toujours sans ébullition.</p>
+						<p>Ajoutez du lait concentré sucré selon votre goût. Normalement une demi boîte suffit. Il vaut mieux qu'il soit peu sucré que trop : vous rectifierez...</p>
+						<p>Laissez consommer encore dix minutes.</p>
+						<p>Délayez votre maïzena dans un peu d'eau froide et ajoutez à la préparation. Au bout de quelques minutes, le chocolat doit épaissir lègèrement, juste pour donner de l'onctueusité. Ne forcez donc pas sur la maïzena.</p>
+						<p>Eteignez le feu, c'est prêt.</p>
+					</div>
+				</div>
+				<div>
+					<h4>Ingrédients:</h4>
+					<ul>
+						<li>1l de lait,</li>
+						<li>2 bâtons de cannelle,</li>
+						<li>1 zeste de citron verts non traité</li>
+						<li>1 gousse de vanille</li>
+						<li>3 cuillères à soupe de cacao en poudre non sucré</li>
+						<li>400 grammes de lait concentré sucré</li>
+						<li>410 grammes de lait concentré non sucré</li>
+						<li>Maizena</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="fondant">
+				<h3>Fondant</h3>
+				<div class="conteneur1">
+					<div class="conteneur2">
+						<div class="conteneur3">
+							<img src="imgRecettes/fondantChoco.jpg" width="250" height="170"/>
+							<div>
+								<h4>Realisation:</h4>
+								<ul>
+									<li>Difficulte : Facile</li>
+									<li>Preparation : 15 mn</li>
+									<li>Cuisson : 20 mn</li>
+									<li>Cuisson : 1h</li>
+									<li>Temps Total : 1h35 mn</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pas">
+							<p>Passer le beurre au micro-ondes une dizaine de secondes.</p>
+							<p>Dans un saladier, travailler le beurre mou, ajouter le sucre en poudre et mélanger. Puis ajouter les œufs un à un en alternance avec la farine.</p>
+							<p>Incorporer le chocolat fondu, remuer et verser la préparation dans des ramequins beurrés..</p>
+							<p>Mettre les ramequins dans le congélateur pendant une heure.</p>
+							<p>Préchauffer le four à 150°C et mettre les ramequins à cuire 20 minutes pas plus.</p>
+						</div>
+					</div>
+					<div>
+						<h4>Ingrédients:</h4>
+						<ul>
+							<li>200 g de chocolat,</li>
+							<li>150 g de beurre,</li>
+							<li>150 g de sucre en poudre,</li>
+							<li>50 g de farine,</li>
+							<li>3 oeufs</li>
+					</ul>
+				</div>
+			</div>
+				</div>
+		</section>
+		<section id="DômeAuChocolat">
+				<h3>Dôme au chocolat</h3>
+				<div class="conteneur1">
+					<div class="conteneur2">
+						<div class="conteneur3">
+							<img src="imgRecettes/Dome choco.png" width="250" height="170"/>
+							<div>
+								<h4>Realisation:</h4>
+								<ul>
+									<li>Difficulte : Moyenne</li>
+									<li>Preparation : 1h30</li>
+									<li>Cuisson : 15 mn</li>
+									<li>Temps Total : 1h45 mn</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pas">
+							<p>Préparer la mousse au chocolat.</p>
+							<p>Préparer une crème anglaise.</p>
+							<p>Mélanger ces deux préparations.</p>
+							<p>Préparer la meringue Italienne</p>
+							<p>Préparer la crème chantilly bien froide.</p>
+							<p>Incorporer délicatement la meringue Italienne à la crème anglaise puis la chantilly bien froide.</p>
+							<p>Couler la préparation dans des moules en silicone légèrement huilés et les mettre au congélateur 3 heures minimum.</p>
+							<p>Démouler et les couvrir du glaçage au chocolat.</p>
+						</div>
+					</div>
+					<div>
+						<h4>Ingrédients:</h4>
+						<ul>
+							<li>90 g de lait,</li>
+							<li>190 g de crème fraîche liquide bien froide,</li>
+							<li>4 jaunes d'oeufs,</li>
+							<li>190 g de chocolat noir,</li>
+							<li>100 g de sucre,</li>
+							<li>50 g de blanc d'oeuf,</li>
+							<li>3 feuilles de gélatine.</li>
+							
+					</ul>
+				</div>
+			</div>
+				</div>
+		</section>
+		<section id="Milkshake">
+				<h3>Milkshake</h3>
+				<div class="conteneur1">
+					<div class="conteneur2">
+						<div class="conteneur3">
+							<img src="imgRecettes/milkshake.jpg" width="250" height="170"/>
+							<div>
+								<h4>Realisation:</h4>
+								<ul>
+									<li>Difficulte : Facile</li>
+									<li>Preparation : 15 mn</li>
+									<li>Temps Total : 15 mn</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pas">
+							<p>Prendre de la glace au chocolat bio.</p>
+							<p>Ajouter des pépites de chocolat noir.</p>
+							<p>Ajouter le lait.</p>
+							<p>Mixer le tout.</p>
+							<p>Servir avec chantilly et paille</p>
+							
+						</div>
+					</div>
+					<div>
+						<h4>Ingrédients:</h4>
+						<ul>
+							<li>1l de glace au chocolat,</li>
+							<li>200 g de pépites au chocolat noir,</li>
+							<li>1/2 litre de lait</li>
+							<li>50 cl de crème fraiche liquide</li>
+							
+					</ul>
+				</div>
+			</div>
+				</div>
+		</section>
+		<section id="TruffesAuChocolat">
+				<h3>Truffes au chocolat</h3>
+				<div class="conteneur1">
+					<div class="conteneur2">
+						<div class="conteneur3">
+							<img src="imgRecettes/truffes.png" width="250" height="170"/>
+							<div>
+								<h4>Realisation:</h4>
+								<ul>
+									<li>Difficulte : Moyenne</li>
+									<li>Preparation : 30 mn</li>
+									<li>Temps de repos : 2h</li>
+									<li>Temps Total :  2h30</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pas">
+							<p>Cassez le chocolat en petits morceaux dans une casserole. Ajoutez le lait et laissez fondre à feu doux (vous pouvez aussi faire fondre votre chocolat au bain-marie). Mélangez avec une spatule en bois pour obtenir une pâte lisse</p>
+							<p>Ajoutez alors le beurre en parcelles en continuant à bien mélanger puis incorporez les jaunes d'oeufs un par un et enfin la crème liquide. Mélangez bien. Ajoutez alors le sucre glace en fouettant. Versez la pâte dans un saladier et placez au frais pendant au moins 2 heures</p>
+							<p>Laisser consommer 10 minutes, toujours sans ébullition.</p>
+							<p>Quand la pâte est bien dure, formez des petites boules de la taille d'une noix et roulez-les dans le cacao pour l'enrobage. Gardez au frais jusqu'au moment de déguster.</p>
+							
+						</div>
+					</div>
+					<div>
+						<h4>Ingrédients:</h4>
+						<ul>
+							<li>300 g de chocolat noir,</li>
+							<li>100 g de beurre,</li>
+							<li>2 jaunes d'oeufs</li>
+							<li>125 g de sucre glace</li>
+							<li>1 cuillères à soupe de lait</li>
+							<li>4 cl de crème liquide</li>
+							<li>poudre de cacao</li>
+					</ul>
+				</div>
+			</div>
+				</div>
+		</section>
+		<section id="MousseAux3Chocolats">
+				<h3>Mousse aux 3 chocolats</h3>
+				<div class="conteneur1">
+					<div class="conteneur2">
+						<div class="conteneur3">
+							<img src="imgRecettes/mousse 3 choco.jpg" width="250" height="170"/>
+							<div>
+								<h4>Realisation:</h4>
+								<ul>
+									<li>Difficulte : Facile</li>
+									<li>Preparation : 15 mn</li>
+									<li>Cuisson : 20 mn</li>
+									<li>Temps Total : 45 mn</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pas">
+							<p>Confectionnez la mousse chocolat noir : faites fondre le chocolat avec le beurre. Incorporez-lui les jaunes d’oeufs. Montez les blancs en neige en les fouettant avec un fouet électrique. Faites-les meringuer en ajoutant le sucre et en continuant de battre. Incorporez-les délicatement à la spatule à la base de chocolat. Versez un fond de mousse chocolat noir au fond des verrines. Laissez prendre au moins 1h au frais.</p>
+							<p> Préparez pendant ce temps la mousse chocolat blanc de la même façon. Versez-la sur la mousse chocolat noir, laissez prendre au moins 1h au frais..</p>
+							<p>Confectionnez la mousse au chocolat au lait de la même façon que les autres. Versez-la sur la mousse chocolat blanc. Laissez prendre 2h au frais.</p>
+							
+						</div>
+					</div>
+					<div>
+						<h4>Ingrédients:</h4>
+						<ul>
+							<li>125 g de chocolat noir,</li>
+							<li>125 g de chocolat au lait,</li>
+							<li>125 g de chocolat blanc,</li>
+							<li>6 oeufs</li>
+							<li>60 g de beurre(20gx3)</li>
+							<li>45 g de sucre (15gx3)</li>
+					</ul>
+				</div>
+			</div>
+				</div>
+		</section>
+	</body>
+</html>
+
+
+

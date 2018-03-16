@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+	<head>
+        <link rel="stylesheet" href="css/styleEvent.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+		<title>Salon du chocolat 2018</title>
+    </head>
+	<body>
+        <div class="cont">
+            <section>
+                <h2 class="link"><a class="surbrillanceElementMenu"	href="accueil.html#">Home</a></h2>
+                <div id="allMenu">
+                    <div>
+                        <!-- icone burger menu + fontions changement de couleurs-->
+                        <div class="container" onclick="myFunction(this)" onmouseover="functionOver(this)" onmouseout="functionOut(this)">
+                            <div id="bar1" class="bar1 "></div>
+                            <div id="bar2" class="bar2 "></div>
+                            <div id="bar3" class="bar3 "></div>
+                        </div>
+                        <!-- Animation .js de l'icone burger menu-->
+                        <script src="js/burgerMenu.js"></script>
+                    </div>
+                    <!-- liste du burger menu -->
+                    <div id="burgerMenu">
+                        <ul class="burgerMenu">
+                            <li><a class="surbrillanceElementMenu liste" href="comingSoon.html#">Histoire du chocolat</a></li>
+                            <li><a class="surbrillanceElementMenu liste" href="comingSoon.html#">Variétés de chocolat</a></li>
+                            <li><a class="surbrillanceElementMenu liste" href="comingSoon.html#">Les producteurs</a></li>
+                            <li><a class="surbrillanceElementMenu liste" href="recettes.html#">Recettes</a></li>
+                            <li><a class="surbrillanceElementMenu liste" href="evenements.html#">Évènements</a></li>
+                            <li><a class="surbrillanceElementMenu liste" href="comingSoon.html#">Qui sommes-nous?</a></li>
+                            <li><a class="surbrillanceElementMenu liste" href="comingSoon.html#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section class="section">
+            <h1>Nos événements chocolat</h1>
+            <h2>Le Salon du Chocolat est le plus grand événement mondial dédié au chocolat et au cacao.</h2>
+            <iframe class="video vid" width="560" height="315" src="https://www.youtube.com/embed/vAeRbjIeDsc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>            <div class="text">
+                <div>	
+                    <p>Plus de 500 participants venus du monde entier</p>
+                    <p>60 pays représentés</p>
+                    <p>Les plus grands noms de la chocolaterie et de la pâtisserie réunis exceptionnellement pendant 5 jours </p>
+                    <p>La plus grande offre de chocolats venus des 5 continents</p>
+                    <p>La présence des pays producteurs de cacao en plein coeur de Paris</p>
+                </div>
+                <div>
+                    <p class="titreParagraphe" >Le Salon du Chocolat, c’est un show festif et didactique pour toute la famille avec, aux côtés des stands, un programme exclusif d’animations et d’événements :</p>
+                    <div>
+                        <p>Démonstrations de recettes par les plus grands chefs</p>
+                        <p>Défilés de robes en chocolat</p>
+                        <p>Concours prestigieux</p>
+                        <p>Expositions et oeuvres en chocolat</p>
+                        <p>Spectacles et performances live</p>
+                        <p>Espace Junior</p>
+                        <p>Ateliers pâtisserie</p>
+                        <p>Conférences</p>
+                        <p>Dédicaces</p>    
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Vidéo live du salon 2017</h2>
+                <video class="videoDD" src="video/salonChoco.mp4" preload controls poster="img/chocoSalon.jpg" width="560" height="315" ></video>
+            </div>
+        </div>
+	</body>
+</html>

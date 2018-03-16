@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Encodage -->
+<meta charset="UTF-8"/>
+<html>
+	<head>
+		<title>Accueil - Aux plaisirs du chocolat</title>
+		<meta name="description" content="Blog pour les passionnés de chocolats. Retrouver l'histoire du chocolat, ses variétés, les pays producteurs, les recettes, les évenements."> 
+		<!-- css format ordinateur-->
+		<link rel="stylesheet" href="css/styleAccueil.css"/>
+		<!-- police d'ecriture maven pro-->
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+		<!-- responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- css format mobile-->
+		<link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/styleAccueilSmallRes.css" />
+	</head>	
+	<body>
+			<!-- vidéo intégrée youtube -->
+		<!--	<iframe width="560" height="315" src="https://www.youtube.com/embed/U_clRy4Mbyw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+			<!-- vidéo intégrée youtube -->
+		<!--	<video src="video/salonChoco.mp4" preload controls poster="img/chocoSalon.jpg" width="400" height="250" ></video> -->
+
+
+			<section id="accueil">
+				<!-- Texte premier bloc "titre"-->
+				<div class="Titre">
+					<h1>Aux plaisirs du chocolat</h1>
+					<h3>Tout sur votre saveur préférée</h3>
+					<img id="logo" src="img/titre.png">
+				</div>
+				<!-- Burger menu -->
+				<div id="allMenu">
+					<div>
+						<!-- icone burger menu + fontions changement de couleurs-->
+						<div class="container" onclick="myFunction(this)" onmouseover="functionOver(this)" onmouseout="functionOut(this)">
+							<div id="bar1" class="bar1 "></div>
+							<div id="bar2" class="bar2 "></div>
+							<div id="bar3" class="bar3 "></div>
+						</div>
+						
+						<!-- Animation .js de l'icone burger menu-->
+						<script src="js/burgerMenu.js"></script>
+					</div>
+
+					<!-- liste du burger menu -->
+					<div id="burgerMenu">
+						<ul>
+							<li><a class="surbrillanceElementMenu" href="comingSoon.html#">Histoire du chocolat</a></li>
+							<li><a class="surbrillanceElementMenu" href="comingSoon.html#">Variétés de chocolat</a></li>
+							<li><a class="surbrillanceElementMenu" href="comingSoon.html#">Les producteurs</a></li>
+							<li><a class="surbrillanceElementMenu" href="recettes.html#">Recettes</a></li>
+							<li><a class="surbrillanceElementMenu" href="evenements.html#">Évènements</a></li>
+							<li><a class="surbrillanceElementMenu" href="comingSoon.html#">Qui sommes-nous?</a></li>
+							<li><a class="surbrillanceElementMenu" href="comingSoon.html#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="conteneur">
+
+				<!-- Deuxieme bloc "recettes"-->
+				<div class="Recettes"><a class="lienInterne" href="recettes.html#" style="display:block;width:100%;height:100%;">Recettes</a></div>
+
+				<!-- Troisieme bloc "Evenements"-->
+				<div class="Evenements"><a class="lienInterne" href="evenements.html#" style="display:block;width:100%;height:100%;">Événements</a></div>
+
+				</div>
+			</section>
+
+	</body>
+</html>
+

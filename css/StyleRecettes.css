@@ -1,0 +1,215 @@
+#ancre{
+	position: fixed;
+	bottom: 40px;
+	right:40px;
+	width: 60px;
+	height: 60px;
+}
+
+#link{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	cursor: pointer;
+
+}
+
+#home{
+	margin: 0;
+}
+
+
+#menu{
+	text-align: center;
+	margin-bottom: 250px;
+
+}
+
+#raccourci{
+	font-size: 27px;
+	text-align: left;
+	margin: 20px;		
+}
+
+#title{
+	padding-bottom: 20px;
+}
+
+#chocolatChaud{
+
+	background-color: rgba(240,240,240,0.95);
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#fondant{
+	margin-top: 200px;
+	background-color: rgba(240,240,240,0.95);
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#DômeAuChocolat{
+	margin-top: 200px;
+	background-color: rgba(240,240,240,0.95);
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#Milkshake{
+	margin-top: 200px;
+	background-color: rgba(240,240,240,0.95);
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#TruffesAuChocolat{
+	margin-top: 200px;
+	background-color: rgba(240,240,240,0.95);
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#MousseAux3Chocolats{
+	margin-top: 200px;
+	background-color: rgba(240,240,240,0.95);
+	padding-left: 20px;
+	padding-top: 5px;
+	margin-bottom: 250px;
+}
+
+.conteneur1{
+	display: flex;
+}
+.conteneur2{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+.conteneur3{
+	display: flex;
+}
+
+html body{
+	font-family: 'Maven Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-image:url(fond.jpg);
+	background-attachment: fixed;
+	color: rgb(92, 45, 12);
+
+}
+
+a{
+	text-decoration: none;
+	font-weight: 400;
+	color: #8B4513;
+}
+
+p{
+	width: 80%;
+}
+
+ul li{
+	list-style: none;
+	padding: 10px;
+	
+}
+
+h4{
+	margin: 40px;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size: 20px;
+}
+
+.surbrillanceElementMenu:hover{
+	color:aqua;
+}
+
+/* icone burger menu */
+.container {
+	/* positionnement des elements l'un en dessous des autres*/
+	display: inline-block;
+	/* passage du pointer en "main"*/
+    cursor: pointer;
+    position: fixed;
+	top: 20px;
+	right: 40px;
+}
+/* icone burger menu */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:rgb(119, 64, 24);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* instruction après click en relation avec le .js (déplacement des barres) */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/* cette barre est mise en transparence car pas utilisée*/
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -6px);
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+#burgerMenu{
+	/* l'icone est fixe si l'on scroll */
+	position: fixed;
+	/* Le contenu du menu ne s'affiche pas à l'avance */
+	display: none;
+	top: 60px;
+	right: 40px;
+}
+
+.burgerMenu{
+	font-weight: 400;
+	background: rgba(55, 27, 7, 0.85);
+	background-size: 5px;
+	margin: 10px;
+	padding: 0;
+}
+
+.liste{
+	text-align: Left;
+}
+
+.lien{
+	color: white;
+}
+
+@media screen and (max-width: 1280px)
+{
+	h1{
+		margin-top: 100px;
+		font-size: 150%;
+	}
+	.conteneur1{
+		flex-direction: column;
+	}
+
+	.conteneur2{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.conteneur3{
+		flex-direction: column;
+	}
+
+	.pas{
+		text-align: left;
+	}
+}
